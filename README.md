@@ -1,13 +1,13 @@
-#PROJEKT04
+##PROJEKT04
 
-instalowanie
+instalowanie:
 npm install
 
-Uruchamianie
+Uruchamianie:
 npm start
 
-Dane testowe
+Dane testowe:
 npm run seed
 
-Logowanie na konto admina
+Logowanie na konto admina:
 login: admin hasło: admin
