@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/style.css">
+<div class="main-center">
+  <section class="page-list">
+    <h1>Lista</h1>
+
+    <div style="margin-bottom: 16px; display:flex; gap:14px; flex-wrap:wrap; align-items:center;">
+      <% if (user) { %>
+        <span>Zalogowany: <strong><%= user.username %></strong></span>
+        <a href="/logout">Wyloguj</a>
+        <a href="/add">Dodaj</a>
+      <% } else { %>
+        <a href="/login">Login</a>
+        <a href="/register">Rejestracja</a>
+      <% } %>
+    </div>
+
+    <ul>
+    <% entries.forEach(e => { %>
+      <li>
+        <span><%= e.name %></span>
+        <div style="float:right; display:flex; gap:10px; align-items:center;">
+          <a style="color:#b9daff;" href="/edit/<%= e.id %>">Edytuj</a>
+          <form method="POST" action="/delete/<%= e.id %>" style="margin:0;">
+            <button style="min-width:80px;">Usuń</button>
+          </form>
+        </div>
+      </li>
+    <% }) %>
+    </ul>
+  </section>
+</div>

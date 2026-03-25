@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/style.css">
+<div class="main-center">
+  <section class="auth-card">
+    <h2>Login</h2>
+    <p class="subtext">Welcome back!</p>
+    <form method="POST">
+      <label for="username">Username</label>
+      <input id="username" name="username" placeholder="login" required>
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" placeholder="hasło" required>
+      <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.8rem; margin-top: 5px; color:#b6c1d5;">
+        <label style="display:inline-flex; align-items:center;"><input type="checkbox" style="margin-right: 6px;" />Remember me</label>
+        <a href="#" style="color:#8ab4ff; text-decoration:none;">Forgot username?</a>
+      </div>
+      <button type="submit">Log in</button>
+    </form>
+    <p style="text-align:center; margin-top:14px; color:#a5b0c2;">
+      Don't have an account? <a href="/register" style="color:#a5c9ff;">Create one</a>
+    </p>
+  </section>
+</div>
